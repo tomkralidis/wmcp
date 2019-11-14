@@ -20,7 +20,7 @@ Manually
 
 === What is (are) considered valid results?
 
-* Length is between 3 words and 150 characters.
+* Length is between 3 words and 150 printable characters (numbers and letters).
 
 * Acronyms:
   ** No only one acronym.
