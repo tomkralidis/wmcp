@@ -4,31 +4,24 @@
 /gmd:MD_Metadata/gmd:identificationInfo//gmd:citation//gmd:title
 
 === What is being measured?
-The title field shall always be populated and and follow the principles of WMCP guidance. The length shall not be too short or too long. (e.g. at least more than 3 words minimum and less than 150 characters), represented in title case and has less than 3 acronyms. 
+The title field shall always be populated and and follow the principles of WMCP guidance. The length shall not be too short or too long, contain less than 3 acronyms and is represented in title case. 
 
 === Why should we measure it?
 Title is the first element of metadata information displayed and helps with initial identification. Meaningful and relevant information makes it easier for users to understand the resource. 
+
 === Rules for implementation ?
 
-WHEN
-title is missing ⇒  0 
-Invalid examples: <gmd:title/>,  <gmd:title><gmd:title/>  and <gmd:title gco:nilReason="missing"/> 
+* IF title is missing ⇒ 0. Examples of missing titles: `<gmd:title/>, <gmd:title><gmd:title/>  and <gmd:title gco:nilReason="missing"/>`
 
+* IF title has more 3 words or more ⇒ +1
 
-IF
-title has more 3 words or more ⇒ +1
+* IF title has 150 characters or less ⇒ +1
 
-IF
-title has 150 characters or less ⇒ +1
+* IF title only has printable characters (numbers and letters) ⇒ +1
 
-IF
-title only has printable characters (numbers and letters) ⇒ +1
+* IF words in title are represented in title case ⇒ +1
 
-IF
-words in title are represented in title case ⇒ +1
-
-IF 
-title contains less than 3 acronyms ⇒ +1
+* IF title contains less than 3 acronyms ⇒ +1
 
 Total possible score: 5
 
