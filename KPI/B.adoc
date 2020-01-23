@@ -1,7 +1,7 @@
 == B. Good Quality Title
 
 === To which WMCP element(s) does it apply?
-/gmd:MD_Metadata/gmd:identificationInfo//gmd:citation//gmd:title
+/gmd:MD_Metadata/gmd:identificationInfo//gmd:citation/gmd:CI_Citation/gmd:title
 
 === What is being measured?
 The title field shall always be populated and and follow the principles of WMCP guidance. The length shall not be too short or too long, contain less than 3 acronyms and is represented in title case. 
